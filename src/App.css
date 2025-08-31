@@ -1,0 +1,144 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+.page-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: black;
+  opacity: 0.5;
+  pointer-events: all;
+}
+
+.atom-count {
+  text-align: center;
+}
+
+.reset-modal-container, 
+.prestige-modal-container, 
+.offline-modal-container {
+  position: fixed;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+}
+
+.group-modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.group-modal {
+  background-color: black;
+  padding: 0.5rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.group-modal-header {
+  text-align: center;
+  color: white;
+  width: 50%;
+}
+
+.group-modal-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.group-modal-group {
+  background-color: black;
+}
+
+.group-modal-button {
+  width: 100%;
+}
+
+.subgroup-container {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: scroll;
+  height: 10vh;
+}
+
+.subgroup-container::-webkit-scrollbar {
+  display: none;
+}
+
+.subgroups {
+  display: flex;
+  padding: 0.5rem 0.25rem;
+}
+
+.subgroup-btn {
+  margin: 0 0.25rem;
+}
+
+.upgrades-container {
+  position: fixed;
+  bottom: 10vh;
+  background-color: white;
+  width: 100%;
+  color: black;
+}
+
+.upgrades {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-upgrade-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.upgrade-requirements {
+  flex: 1;
+  font-size: 0.7rem;
+}
+
+.upgrade-btn {
+  margin: 0.25rem;
+  cursor: pointer;
+  flex: 2;
+}
+
+.upgrade-btn-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.bulk-buy-btn {
+  background-color: black;
+  border: none;
+  margin: 0 0.25rem;
+  cursor: pointer;
+}
+
+.bulk-buy-btn-active {
+  background-color: red;
+}
